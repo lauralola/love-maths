@@ -40,10 +40,10 @@ function checkAnswer(){
     let isCorrect= userAnswer===calculatedAnswer[0];
     if (isCorrect){
         alert('Hey you got it right:D')
-        incrementScore;
+        incrementScore();
     } else{
         alert(`Aww..you answered ${userAnswer}. The correct answer is ${calculatedAnswer[0]}!`)
-        incrementWrongAnswer;
+        incrementWrongAnswer();
     }
 };
 
